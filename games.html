@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Games - Game Review Hub</title>
+  <link rel="icon" type="image/png" href="images/header_icon.png"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="images/logo.jpg" alt="Logo" class="logo" />
+      Game Review Hub
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">All Games</a>
+      <button id="theme-toggle" title="Toggle Theme">🌙</button> <!-- ปุ่ม Toggle -->
+    </nav>
+  </header>
+
+  <main class="main">
+    <section>
+      <h2 style="color: #d4af37;">All Game Reviews</h2>
+
+      <!-- 🔍 ช่องค้นหา -->
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search for a game..."
+        style="width: 100%; padding: 0.8em; margin: 1em 0; border-radius: 8px; border: none;"
+      />
+
+      <div class="featured-games">
+        <div class="game-card">
+          <a href="game-detail.html?game=eldenring">
+            <img src="images/eldenring_logo.avif" alt="Elden Ring" />
+            <h3>Elden Ring</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="game-detail.html?game=cyberpunk2077">
+            <img src="images/cyberpunk2077_logo.jpg" alt="Cyberpunk 2077" />
+            <h3>Cyberpunk 2077</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="game-detail.html?game=minecraft">
+            <img src="images/minecraft_logo.png" alt="Minecraft" />
+            <h3>Minecraft</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="game-detail.html?game=valorant">
+            <img src="images/valorant_logo.jpg" alt="Valorant" />
+            <h3>Valorant</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="game-detail.html?game=re4remake">
+            <img src="images/re4remake_logo.png" alt="Resident Evil 4 Remake" />
+            <h3>Resident Evil 4 Remake</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

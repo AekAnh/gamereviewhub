@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Review Hub</title>
+  <link rel="icon" type="image/png" href="images/header_icon.png"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="images/logo.jpg" alt="Logo" class="logo" />
+      Game Review Hub
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">All Games</a>
+      <button id="theme-toggle" title="Toggle Theme">🌙</button> <!-- ปุ่ม Toggle -->
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- 📰 ข่าวเลื่อน (News Slider) -->
+    <section class="news-slider">
+      <div class="slider-track">
+        <div class="slide"><img src="images/slideshow_index/news1.png" alt="News 1" /></div>
+        <div class="slide"><img src="images/slideshow_index/news2.png" alt="News 2" /></div>
+        <div class="slide"><img src="images/slideshow_index/news3.png" alt="News 3" /></div>
+        <div class="slide"><img src="images/slideshow_index/news4.png" alt="News 4" /></div>
+        <div class="slide"><img src="images/slideshow_index/news5.png" alt="News 5" /></div>
+      </div>
+      <button id="prevBtn">❮</button>
+      <button id="nextBtn">❯</button>
+    </section>
+
+    <!-- 🎮 เกมแนะนำ -->
+    <section>
+      <h2 style="color: #d4af37;">Featured Games</h2>
+      <div class="featured-games">
+        <div class="game-card"><a href="game-detail.html?game=eldenring"><img src="images/eldenring_logo.avif" alt="Elden Ring"/><h3>Elden Ring</h3></a></div>
+        <div class="game-card"><a href="game-detail.html?game=cyberpunk2077"><img src="images/cyberpunk2077_logo.jpg" alt="Cyberpunk 2077"/><h3>Cyberpunk 2077</h3></a></div>
+        <div class="game-card"><a href="game-detail.html?game=minecraft"><img src="images/minecraft_logo.png" alt="Minecraft"/><h3>Minecraft</h3></a></div>
+        <div class="game-card"><a href="game-detail.html?game=valorant"><img src="images/valorant_logo.jpg" alt="Valorant"/><h3>Valorant</h3></a></div>
+        <div class="game-card"><a href="game-detail.html?game=re4remake"><img src="images/re4remake_logo.png" alt="RE4 Remake"/><h3>Resident Evil 4 Remake</h3></a></div>
+      </div>
+    </section>
+
+    <!-- 🧠 เทคนิคเกมเด็ด -->
+    <section style="margin-top: 3em;">
+      <h2 style="color: #d4af37;">🎮Top Trick in the Games🎮</h2>
+      <div class="featured-games">
+        <div class="game-card">
+          <a href="trick-minecraft.html">
+            <img src="images/games_trick/minecraft_trick.jpg" alt="Minecraft Tips" />
+            <h3>📘 คำสั่ง Minecraft ที่เป็นประโยชน์</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="trick-gtav.html">
+            <img src="images/games_trick/gtav_trick.jpg" alt="GTA V Cheats" />
+            <h3>🎮 รวมสูตรโกง GTA V PC & Console</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="trick-gtasa.html">
+            <img src="images/games_trick/gta_sa_trick.jpg" alt="GTA SA Cheats" />
+            <h3>💰 สูตรโกง GTA SA</h3>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="trick-cyberpunk.html">
+            <img src="images/games_trick/cyberpunk_trick.jpg" alt="Cyberpunk Secrets" />
+            <h3>🕵️ เคล็ดลับใน Cyberpunk</h3>
+          </a>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

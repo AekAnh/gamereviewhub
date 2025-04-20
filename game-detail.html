@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Review Detail</title>
+  <link rel="icon" type="image/png" href="images/header_icon.png"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="images/logo.jpg" alt="Logo" class="logo" />
+      Game Review Hub
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">All Games</a>
+      <button id="theme-toggle" title="Toggle Theme">🌙</button> <!-- ปุ่ม Toggle -->
+    </nav>
+  </header>
+
+  <main class="main">
+    <article>
+      <h2 id="game-title" style="color: #d4af37;">Loading...</h2>
+
+      <!-- 🎥 วิดีโอรีวิว -->
+      <video id="game-video" class="game-video" controls>
+        <source id="video-source" src="" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- 🖼️ Screenshot/Trailer Section -->
+      <section class="screenshot-section">
+        <h3 style="color: #d4af37;">Screenshots / Trailers</h3>
+        <div class="screenshot-gallery"></div> 
+      </section>      
+
+      <!-- 📃 รีวิว -->
+      <section class="review-section">
+        <p id="author-review">Loading review...</p>
+        <div class="detailed-review">
+          <h3>📖 เนื้อเรื่อง (Story)</h3>
+          <p id="review-story"></p>
+      
+          <h3>🎮 ระบบการเล่น (Gameplay)</h3>
+          <p id="review-gameplay"></p>
+      
+          <h3>🎨 กราฟิก (Graphic)</h3>
+          <p id="review-graphic"></p>
+      
+          <p><strong>Author Score:</strong> <span id="author-score"></span></p>
+        </div>
+      </section>
+      
+      
+
+      <!-- 💬 คอมเมนต์ -->
+      <section class="comments-section">
+        <h3 style="color: #d4af37;">Comments</h3>
+        <form id="comment-form">
+          <input type="text" id="username-input" placeholder="Your name..." required />
+          <input type="text" id="comment-input" placeholder="Write your comment..." required />
+          <button type="submit">Submit</button>
+        </form>
+        <ul id="comment-list"></ul>
+      </section>
+      
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
